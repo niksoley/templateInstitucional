@@ -1,0 +1,547 @@
+@charset 'utf-8';
+$laranja: #ff8500;
+$azul: #52667c;
+$azulEscuro: #273544;
+$branca: #FFF;
+$tituloMobile: 14pt;
+$letraMobile: 12pt;
+$letraMobile2: 10pt;
+$espaco: 70%;
+@mixin regular {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+/* Main CSS Desenvolvido para Mobile */
+/*--------------------------------------------------------------------------------------
+Institucional - Template
+0. GLOBAL
+1. NAVBAR / LOGO
+2. BANNER
+3. CERVEJAS
+4. SOBRE
+5. EVENTOS
+6. CONTATO
+7. MAPA
+8. FORMULARIO
+ ----------------------------------------------------------------------------------------*/
+/*--------------------
+  0. GLOBAL
+----------------------*/
+.displayNoneMobile {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: $branca;
+}
+/*--------------------
+  1. NAVBAR / LOGO
+----------------------*/
+#navBarMobile {
+  min-height: 10vh;
+  padding   : 20px;
+}
+
+#navBarDesktop {
+  display: none;
+}
+/* CENTER TOGGOLE MENU */
+.navbar-brand {
+  display: none;
+}
+
+.navbar-toggler {
+  margin: auto;
+  border: none;
+}
+/*DRAW TOGGLE MENU */
+.navbar-light .navbar-toggler-icon {
+  width           : 40px;
+  background-image: url("data: image/svg+xml; charset=utf8,%3Csvg viewBox='0 0 32 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,133,0)' stroke-width='2' stroke-miterlimit='0' d='M-10 3h60M-10 13h53M-10 23h53M-10 33H53'/%3E%3C/svg%3E");
+}
+/* CENTER NAV LINKS */
+.navbar .navbar-nav {
+  display: inline-block;
+  float  : none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+/*--------------------
+  2. BANNER
+---------------------*/
+#banner {
+  background-image   : url("../img/mobile/Banner_Mobile.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  min-height         : 90vh;
+  position           : relative;
+  display            : flex;
+  justify-content    : center;
+  align-items        : center;
+  flex-direction     : column;
+}
+
+#bannerLogo {
+  text-align : center;
+  padding-top: 40px;
+  position   : absolute;
+  top        : 0;
+  right      : 50%;
+  transform  : translateX(50%);
+}
+
+#bannerDetalhes {
+  width           : 80%;
+  max-width       : 300px;
+  background-color: $azul;
+  color           : $branca;
+  padding         : 25px;
+  margin          : 150px 0 50px;
+
+  span {
+    @include bold();
+    font-size: $tituloMobile;
+  }
+
+  p {
+    @include regular();
+    font-size: $letraMobile;
+  }
+
+  a {
+    @include regular();
+    color    : $branca;
+    font-size: $letraMobile;
+    padding  : 10px;
+    border   : 1px solid $branca;
+  }
+}
+
+#bannerDetalhesTituloMobile {
+  @include bold();
+
+  .laranja {
+    color: $laranja;
+  }
+}
+
+#bannerSocial,
+.home {
+  display: none;
+}
+/*--------------------
+  3. Links
+----------------------*/
+#linksPadding {
+  width      : 80%;
+  margin     : auto;
+  padding-top: 60px;
+
+  h1 {
+    margin-bottom: 60px;
+    @include bold();
+    font-size    : $tituloMobile;
+    color        : $azul;
+    text-align   : center;
+  }
+
+  h2 {
+    @include regular();
+    font-size       : $tituloMobile;
+    color           : $branca;
+    background-color: $laranja;
+    text-align      : center;
+    margin          : 0;
+    padding         : 0;
+    line-height     : 35px;
+  }
+
+  a {
+    @include regular();
+    font-size       : $letraMobile2;
+    color           : $branca;
+    background-color: $azul;
+    display         : block;
+    height          : 100%;
+    text-align      : left;
+    padding         : 12px 20px;
+    background-color: $azul;
+  }
+}
+
+#linksDetalhesContainer {
+  margin-bottom: 60px;
+}
+
+.linksDetalhesTitulo {
+  min-width: 80px;
+  max-width: 100px;
+}
+
+.linksDetalhes {
+  margin-bottom: 40px;
+
+  img {
+    width         : 100%;
+    outline       : 2px solid white;
+    outline-offset: -20px;
+  }
+}
+
+#linksNovidades {
+  width         : 100%;
+  outline       : 2px solid $laranja;
+  outline-offset: 15px;
+  @include regular();
+  font-size     : $letraMobile;
+  color         : $laranja;
+  margin-top    : 30px;
+  margin-bottom : 100px;
+
+  a {
+    color     : $laranja;
+    @include regular();
+    font-size : $letraMobile;
+    background: $branca;
+    display   : inline;
+    margin    : 0;
+    padding   : 10px;
+    border    : 1px solid $laranja;
+  }
+
+  &:hover {
+    border-color: $laranja;
+    color       : $laranja;
+  }
+
+  p:first-of-type {
+    @include bold();
+  }
+
+  p {
+    font-size: $letraMobile;
+  }
+}
+
+#imgServicos {
+  width              : 100%;
+  min-height         : 150px;
+  background-image   : url("../img/mobile/Servicos.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  margin-bottom      : 20px;
+}
+
+#Novidades {
+  @include bold();
+  font-size: $tituloMobile;
+  color    : $laranja;
+}
+/*--------------------
+  4. CONTATO
+----------------------*/
+#contato {
+  margin-top      : 40px;
+  padding         : 40px 10%;
+  text-align      : left;
+  background-color: $laranja;
+
+  br {
+    display: none;
+  }
+
+  span:first-of-type {
+    color        : $branca;
+    @include bold();
+    font-size    : $tituloMobile;
+    margin-bottom: 20px;
+  }
+}
+
+#contatoContainerForm {
+  display       : flex;
+  flex-direction: column;
+  margin        : auto;
+  padding-top   : 40px;
+
+  ::placeholder {
+    padding-left: 8px;
+    color       : $laranja;
+    @include regular();
+  }
+}
+
+.input input,
+.input textarea {
+  width        : 100%;
+  border       : none;
+  border-radius: 0;
+}
+
+.input input {
+  margin-bottom: 10px;
+  height       : 35px;
+  padding      : 0;
+}
+
+.input textarea {
+  height       : 150px;
+  margin-bottom: 10px;
+  padding      : 0;
+}
+
+.input input:active {
+  @include regular();
+  padding: 0 0 0 10px;
+  color  : $azul;
+}
+
+#button {
+  text-align: right;
+
+  button {
+    color           : $branca;
+    background-color: $laranja;
+    border-width    : 2px;
+    padding         : 8px;
+    border-color    : $branca;
+  }
+}
+
+#contatoContainerDados {
+  color     : $branca;
+  text-align: left;
+  margin    : 50px auto;
+
+  span {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size    : $letraMobile;
+  }
+}
+
+#contatoContainerDadosTitulo,
+.contatoContainerDadosMargin {
+  margin-bottom: 8px !important;
+}
+/*--------------------
+  5. NewsLetter
+----------------------*/
+#newsletter {
+  background-image   : url("../img/mobile/FundoLinhas_Mobile.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  color              : $branca;
+
+  #newslettermargin {
+    max-width: 80%;
+    margin   : auto;
+
+    h3 {
+      padding-top: 40px;
+    }
+
+    img {
+      width         : 100%;
+      padding-top   : 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+#newsletterBotaoFundo {
+  background-color: transparent !important;
+  color           : $branca !important;
+}
+/*--------------------
+  6. NAVEGAÇÃO
+----------------------*/
+#navegacao {
+  background-color: $azul;
+  color           : $branca;
+  margin-top      : -1px;
+  z-index         : 2;
+
+  span {
+    font-size: $tituloMobile;
+  }
+
+  a {
+    color    : $branca;
+    font-size: $tituloMobile;
+  }
+}
+
+#navegacao2 {
+  display: none;
+}
+
+#navegacaoMargin {
+  max-width     : 80%;
+  text-align    : right;
+  margin        : auto;
+  padding-bottom: 30px;
+  padding-top   : 30px;
+  display       : flex;
+  flex-direction: column;
+
+  :first-child {
+    @include bold();
+  }
+}
+/*--------------------
+  7. footer
+----------------------*/
+.grande {
+  display: none;
+}
+
+footer {
+  background-color: $azulEscuro;
+  text-align      : center;
+  padding-top     : 20px;
+  padding-bottom  : 20px;
+  margin-top      : -1px;
+
+  span {
+    font-size: $tituloMobile;
+    color    : $branca;
+  }
+}
+/*--------------------
+  8. Pagina História
+----------------------*/
+#bannerLogoHistoria {
+  text-align      : center;
+  background-color: #f8f9fa;
+  padding         : 0 0 30px;
+}
+
+#imgDesktop {
+  display: none;
+}
+
+#historiaDesktop {
+  display: none;
+}
+
+#historia {
+  padding: 0 0 50px;
+
+  div {
+    text-align: left;
+    max-width : $espaco;
+    margin    : auto;
+  }
+
+  h1 {
+    font-size  : $tituloMobile;
+    color      : $azul;
+    @include bold ();
+    padding-top: 50px;
+    margin     : 0 0 20px;
+  }
+
+  img {
+    width        : 100%;
+    margin-bottom: 35px;
+  }
+
+  p:first-of-type {
+    @include bold;
+  }
+
+  p {
+    color    : $laranja;
+    font-size: $letraMobile;
+  }
+}
+
+#historiaParagrafos {
+  outline       : 2px solid $laranja;
+  outline-offset: 10px;
+  padding-bottom: 8px;
+
+  a {
+    color    : $laranja;
+    font-size: $letraMobile;
+    border   : 2px solid $laranja;
+    padding  : 5px;
+  }
+}
+/*--------------------
+  8. Pagina Servico
+----------------------*/
+#servicoPadding {
+  max-width : $espaco;
+  margin    : auto;
+  padding   : 0 0 50px;
+  text-align: left;
+
+  h1 {
+    font-size    : $tituloMobile;
+    color        : $azul;
+    @include bold ();
+    margin-top   : 60px;
+    margin-bottom: 40px;
+  }
+}
+
+#servicoPaddingOutline {
+  outline       : 2px solid $laranja;
+  outline-offset: 13px;
+  margin        : 40px 0;
+
+  img {
+    width: 100%;
+  }
+
+  p:first-of-type {
+    @include bold;
+  }
+
+  p {
+    color    : $laranja;
+    font-size: $letraMobile;
+  }
+
+  a {
+    color    : $laranja;
+    font-size: $letraMobile;
+    border   : 2px solid $laranja;
+    padding  : 5px;
+  }
+}
+
+.servicoInvert {
+  margin: 100px 0 !important;
+}
+
+#servicoImgText {
+  background-color: $laranja;
+  color           : $branca !important;
+  font-size       : $letraMobile !important;
+  font-family     : "Roboto";
+  font-weight     : 400 !important;
+  padding         : 10px;
+}
+
+.servicos {
+  margin-top: 80px;
+}

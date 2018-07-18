@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* Main CSS Desenvolvido para Mobile */
+/*-------------------------------------------------------------------------------------- Institucional - Template 0. GLOBAL test 1. NAVBAR / LOGO 2. BANNER 3. CERVEJAS 4. SOBRE 5. EVENTOS 6. CONTATO 7. MAPA 8. FORMULARIO ----------------------------------------------------------------------------------------*/
+/*-------------------- 0. GLOBAL ----------------------*/
+.displayNoneMobile { display: none; }
+
+a { text-decoration: none; }
+
+a:hover { color: #FFF; }
+
+/*-------------------- 1. NAVBAR / LOGO ----------------------*/
+#navBarDesktop { display: none; }
+
+/* CENTER TOGGOLE MENU */
+.navbar-brand { display: none; }
+
+.navbar-toggler { margin: auto; border: none; }
+
+/*DRAW TOGGLE MENU */
+.navbar-light .navbar-toggler-icon { width: 40px; background-image: url("data: image/svg+xml; charset=utf8,%3Csvg viewBox='0 0 32 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,133,0)' stroke-width='2' stroke-miterlimit='0' d='M-10 3h60M-10 13h53M-10 23h53M-10 33H53'/%3E%3C/svg%3E"); }
+
+/* CENTER NAV LINKS */
+.navbar .navbar-nav { display: inline-block; float: none; }
+
+.navbar .navbar-collapse { text-align: center; }
+
+.navbar-light { padding-top: 20px; padding-bottom: 20px; }
+
+/*-------------------- 2. BANNER ---------------------*/
+#banner { background-image: url("../img/mobile/Banner_Mobile.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; height: 100vh; }
+
+#bannerLogo { text-align: center; padding-top: 40px; }
+
+#bannerDetalhes { width: 80%; margin: 200px auto auto; background-color: #52667c; color: #FFF; padding: 25px; }
+
+#bannerDetalhes p { font-family: "Roboto"; font-weight: 400; }
+
+#bannerDetalhes a { font-family: "Roboto"; font-weight: 400; color: #FFF; font-size: 10pt; padding: 10px; border: 1px solid #FFF; }
+
+#bannerDetalhesTituloMobile { font-family: "Roboto"; font-weight: bold; }
+
+#bannerDetalhesTituloMobile .laranja { color: #ff8500; }
+
+#bannerSocial, .home { display: none; }
+
+/*-------------------- 3. Links ----------------------*/
+#linksPadding { width: 80%; margin: auto; padding-top: 60px; }
+
+#linksPadding h1 { margin-bottom: 60px; font-family: "Roboto"; font-weight: bold; font-size: 14pt; color: #52667c; text-align: center; }
+
+#linksPadding h2 { font-family: "Roboto"; font-weight: bold; font-size: 14pt; color: #FFF; background-color: #ff8500; text-align: center; margin: 0; padding: 0; line-height: 35px; }
+
+#linksPadding a { font-family: "Roboto"; font-weight: 400; font-size: 10pt; color: #FFF; background-color: #52667c; display: block; height: 100%; text-align: left; padding: 12px 20px; background-color: #52667c; }
+
+#linksDetalhesContainer { margin-bottom: 60px; }
+
+.linksDetalhesTitulo { min-width: 80px; max-width: 100px; }
+
+.linksDetalhes { margin-bottom: 40px; }
+
+.linksDetalhes img { width: 100%; outline: 2px solid white; outline-offset: -20px; }
+
+#linksNovidades { width: 100%; outline: 2px solid #ff8500; outline-offset: 15px; font-family: "Roboto"; font-weight: 400; font-size: 10pt; color: #ff8500; margin-top: 30px; margin-bottom: 100px; }
+
+#linksNovidades img { width: 100%; }
+
+#linksNovidades a { color: #ff8500; font-family: "Roboto"; font-weight: 400; font-size: 10pt; background: #FFF; display: inline; margin: 0; padding: 10px; border: 1px solid #ff8500; }
+
+#linksNovidades:hover { border-color: #ff8500; color: #ff8500; }
+
+#linksNovidades p:first-of-type { font-family: "Roboto"; font-weight: bold; }
+
+#Novidades { font-family: "Roboto"; font-weight: bold; font-size: 14pt; color: #ff8500; }
+
+/*-------------------- 4. CONTATO ----------------------*/
+#contato { margin-top: 40px; padding-bottom: 40px; text-align: center; background-color: #ff8500; }
+
+#contato br { display: none; }
+
+#contato span:first-of-type { color: #FFF; font-family: "Roboto"; font-weight: bold; font-size: 14pt; text-align: left; margin-bottom: 20px; }
+
+#contatoContainerForm { display: flex; flex-direction: column; max-width: 70%; margin: auto; padding-top: 40px; }
+
+#contatoContainerForm ::placeholder { padding-left: 8px; }
+
+.input input, .input textarea { width: 100%; border: none; border-radius: 0; }
+
+.input input { margin-bottom: 10px; height: 35px; }
+
+.input textarea { height: 150px; margin-bottom: 10px; }
+
+#button { text-align: right; }
+
+#button button { color: #FFF; background-color: #ff8500; border-width: 2px; padding: 8px; border-color: #FFF; }
+
+#contatoContainerDados { color: #FFF; text-align: left; max-width: 70%; margin: auto; }
+
+#contatoContainerDados span { margin-bottom: 0; }
+
+#contatoContainerDados p { margin-bottom: 0; font-size: 10pt; }
+
+#contatoContainerDadosTitulo, .contatoContainerDadosMargin { margin-bottom: 8px !important; }
+
+/*-------------------- 5. NewsLetter ----------------------*/
+#newsletter { background: repeating-linear-gradient(45deg, #52667c, #52667c 10px, #FFF 11px, #FFF 11px); color: #FFF; }
+
+#newsletter #newslettermargin { max-width: 70%; margin: auto; }
+
+#newsletter #newslettermargin h3 { padding-top: 40px; }
+
+#newsletter #newslettermargin img { width: 100%; padding-top: 60px; padding-bottom: 60px; }
+
+#newsletterBotaoFundo { background-color: transparent !important; color: #FFF !important; }
+
+/*-------------------- 6. NAVEGAÇÃO ----------------------*/
+#navegacao { background-color: #52667c; color: #FFF; }
+
+#navegacao span { font-size: 14pt; }
+
+#navegacao a { color: #FFF; font-size: 14pt; }
+
+#navegacao2 { display: none; }
+
+#navegacaoMargin { max-width: 70%; text-align: right; margin: auto; padding-bottom: 30px; padding-top: 30px; display: flex; flex-direction: column; }
+
+#navegacaoMargin :first-child { font-family: "Roboto"; font-weight: bold; }
+
+/*-------------------- 7. footer ----------------------*/
+.grande { display: none; }
+
+footer { background-color: #273544; text-align: center; padding-top: 20px; padding-bottom: 20px; }
+
+footer span { font-size: 14pt; color: #FFF; }
+
+/*-------------------- 8. Pagina História ----------------------*/
+#imgDesktop { display: none; }
+
+#historiaDesktop { display: none; }
+
+#historia div { text-align: left; max-width: 70%; margin: auto; }
+
+#historia h1 { font-size: 14pt; color: #52667c; font-family: "Roboto"; font-weight: bold; padding-top: 60px; }
+
+#historia img { width: 100%; margin-bottom: 35px; }
+
+#historia p:first-of-type { font-family: "Roboto"; font-weight: bold; }
+
+#historia p { color: #ff8500; font-size: 10pt; }
+
+#historiaParagrafos { outline: 2px solid #ff8500; outline-offset: 10px; padding-bottom: 8px; }
+
+#historiaParagrafos a { color: #ff8500; font-size: 10pt; border: 2px solid #ff8500; padding: 5px; }
+
+/*-------------------- 8. Pagina Servico ----------------------*/
+#servicoPadding { max-width: 70%; margin: auto; text-align: left; }
+
+#servicoPadding h1 { font-size: 14pt; color: #52667c; font-family: "Roboto"; font-weight: bold; margin-top: 60px; margin-bottom: 40px; }
+
+#servicoPaddingOutline { outline: 2px solid #ff8500; outline-offset: 13px; }
+
+#servicoPaddingOutline img { width: 100%; }
+
+#servicoPaddingOutline p:first-of-type { font-family: "Roboto"; font-weight: bold; }
+
+#servicoPaddingOutline p { color: #ff8500; font-size: 10pt; }
+
+#servicoPaddingOutline a { color: #ff8500; font-size: 10pt; border: 2px solid #ff8500; padding: 5px; }
+
+#servicoImgText { background-color: #ff8500; color: #FFF !important; font-size: 10pt !important; font-family: "Roboto"; font-weight: 400 !important; padding: 10px; }
+
+.servicos { margin-top: 80px; }

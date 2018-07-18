@@ -1,0 +1,34 @@
+$laranja: #ff8500;
+$azul: #52667c;
+$branca: #FFF;
+$titulo: 16pt;
+$letra: 12pt;
+$fontNormal: 'candara';
+$fontBold: 'Candara Bold';
+@mixin regular {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+/* Main CSS Desenvolvido para Mobile */
+/*--------------------------------------------------------------------------------------
+Institucional - Template
+0. GLOBAL
+1. NAVBAR / LOGO
+2. BANNER
+3. CERVEJAS
+4. SOBRE
+5. EVENTOS
+6. CONTATO
+7. MAPA
+8. FORMULARIO
+ ----------------------------------------------------------------------------------------*/
+/*--------------------
+   3. Links
+ ----------------------*/
+#imgServicos {
+  height: 300px;
+}

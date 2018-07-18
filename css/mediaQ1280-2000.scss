@@ -1,0 +1,460 @@
+$laranja: #ff8500;
+$azul: #52667c;
+$branca: #FFF;
+$titulo: 16pt;
+$letra: 12pt;
+$fontNormal: 'candara';
+$fontBold: 'Candara Bold';
+@mixin regular {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+/* Main CSS Desenvolvido para Mobile */
+/*--------------------------------------------------------------------------------------
+Institucional - Template
+0. GLOBAL
+1. NAVBAR / LOGO
+2. BANNER
+3. CERVEJAS
+4. SOBRE
+5. EVENTOS
+6. CONTATO
+7. MAPA
+8. FORMULARIO
+ ----------------------------------------------------------------------------------------*/
+/*--------------------
+  0. GLOBAL
+----------------------*/
+/*--------------------
+  1. NAVBAR / LOGO
+----------------------*/
+#navBarDesktop {
+  display: flex;
+
+  .navbar-nav {
+    background-color: rgba(82, 102, 124, 0.5);
+    padding         : 0 20px 0 0;
+  }
+
+  .nav-link {
+    width: 120px;
+  }
+}
+
+#navBarMobile {
+  display: none;
+}
+
+.navbar .navbar-collapse {
+  text-align  : right;
+  margin-right: 5px;
+
+  a {
+    color    : $branca !important;
+    font-size: $letra;
+  }
+}
+
+header {
+  span {
+    color: $branca;
+  }
+}
+
+#headerImgLogo {
+  width      : 250px;
+  margin-left: 20px;
+}
+/*DRAW TOGGLE MENU */
+.navbar-light .navbar-toggler-icon {
+  width           : 40px;
+  background-image: url("data: image/svg+xml; charset=utf8,%3Csvg viewBox='10 2 40 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-miterlimit='0' d='M20 1h20M20 8h20M20 15h20M20'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+  display: inline;
+  width  : 100px;
+}
+
+.navbar-light {
+  background-color: transparent !important;
+}
+
+.navbar-toggler {
+  margin: 0;
+}
+
+#home {
+  padding: 10px;
+}
+
+.home {
+  font-size: $titulo;
+
+  a {
+    color: $branca;
+  }
+}
+
+#homeBorder {
+  border : 1px solid white;
+  padding: 5px;
+}
+/*--------------------
+  2. BANNER
+----------------------*/
+#banner {
+  background-image   : url("../img/grande/Banner.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  height             : 100vh;
+  position           : relative;
+  display            : block;
+}
+
+#bannerLogo img {
+  display: none;
+}
+
+#bannerSocial {
+  display  : block;
+  position : absolute;
+  left     : 35px;
+  bottom   : 50%;
+  transform: translateY(50%);
+
+  img {
+    height: 300px;
+  }
+}
+
+#bannerDetalhes {
+  max-width: 40%;
+  margin   : 0;
+  position : absolute;
+  top      : 35%;
+  right    : 50%;
+  transform: translateX(100%);
+
+  span {
+    font-size: $titulo;
+  }
+
+  p {
+    font-size: $letra;
+  }
+
+  a {
+    font-size: $letra;
+  }
+}
+
+.home {
+  display: inline;
+  color  : $branca;
+}
+/*--------------------
+  3. Links
+----------------------*/
+#linksPadding {
+  width      : 80%;
+  padding-top: 80px;
+
+  br {}
+
+  h1 {
+    text-align: center;
+    font-size : $titulo;
+  }
+
+  a {
+    font-size: $letra;
+  }
+}
+
+#linksDetalhesContainer {
+  display        : flex;
+  justify-content: space-between;
+  margin-bottom  : 10px;
+
+  h2 {
+    font-size: $titulo;
+    @include regular ();
+  }
+}
+
+.linksDetalhes {
+  width: 30%;
+}
+
+#linksNovidadesMarginBorder {
+  display        : flex;
+  justify-content: space-between;
+
+  div {
+    max-width: 50%;
+  }
+
+  a,
+  p {
+    font-size: $letra;
+  }
+}
+
+#linksNovidades {
+  margin-top : 40px !important;
+  align-items: stretch;
+}
+
+#imgServicos {
+  width              : 45%;
+  background-image   : url("../img/mobile/Servicos.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  margin-bottom      : 0;
+  min-height         : 300px;
+}
+
+#Novidades {
+  font-size: $titulo;
+  color    : $azul;
+  @include regular;
+}
+/*--------------------
+  3. Contato
+----------------------*/
+#contato {
+  width  : 100%;
+  padding: 40px 20%;
+}
+
+#contatoContainer {
+  display        : flex;
+  justify-content: space-between;
+  margin         : auto;
+  padding        : 30px 0;
+
+  span:first-of-type {
+    margin-top: 10px;
+    font-size : $titulo;
+  }
+
+  p {
+    font-size: $letra;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+#contatoMargin {
+  max-width: 80%;
+  margin   : auto;
+}
+
+#contatoContainerForm {
+  margin : 0;
+  padding: 0;
+  width  : 35%;
+}
+
+#contatoContainerDados {
+  margin   : 0;
+  padding  : 0;
+  max-width: 45%;
+}
+/*--------------------
+  3. newsletter
+----------------------*/
+#newsletter {
+  text-align      : center;
+  padding         : 80px 0 0;
+  background-image: url("../img/mobile/FundoLinhas.jpg");
+
+  h3 {
+    padding-top: 30px !important;
+    font-size  : $titulo;
+  }
+
+  p {
+    font-size: $letra;
+  }
+}
+
+#newsletterImgSocial {
+  margin: auto;
+  width : 30% !important;
+}
+
+#newsletterDiv {
+  text-align: left;
+  width     : 50%;
+}
+
+#newsletterInput {
+  display        : flex;
+  justify-content: left;
+  align-items    : baseline;
+
+  input {
+    width : 350px;
+    margin: 0 15px 0 0;
+
+    ::placeholder {
+      margin-left: 5px;
+    }
+  }
+}
+
+#newsletter {
+  #newslettermargin {
+    max-width: 60%;
+
+    a,
+    span {
+      font-size: $titulo;
+    }
+  }
+}
+/*--------------------
+  3. navegacao
+----------------------*/
+#navegacaoMargin {
+  a {
+    color: $branca;
+  }
+}
+
+#navegacao {
+  display: none;
+}
+
+#navegacao2 {
+  display   : block;
+  font-size : 20pt;
+  text-align: left;
+
+  #navegacaoMargin {
+    max-width: 100%;
+  }
+}
+
+#newsletterDisplayFlex {
+  display        : flex;
+  justify-content: space-between;
+  align-content  : center;
+  align-items    : baseline;
+}
+/*--------------------
+  3. footer
+----------------------*/
+footer span {
+  font-size: $titulo;
+}
+/*--------------------
+  3. historia
+----------------------*/
+#bannerLogoHistoria {
+  display: none;
+}
+
+.navBarHistoria {
+  background-color: $azul !important;
+  padding         : 40px 0 20px;
+  margin          : 0 0 60px;
+}
+
+#historia {
+  display: none;
+}
+
+#historiaDesktop {
+  display: block;
+  width  : 80%;
+  margin : auto;
+
+  h1 {
+    color    : $azul;
+    @include regular;
+    font-size: $titulo;
+    margin   : 0 0 30px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+#historiaContainerFlex {
+  display        : flex;
+  justify-content: space-between;
+  margin-top     : 80px;
+  border         : 1px solid $laranja;
+  padding        : 15px;
+}
+
+.historiaParagrafos {
+  outline  : 0;
+  color    : $laranja;
+  font-size: 10pt;
+  max-width: 48%;
+
+  p:first-of-type {
+    @include bold();
+  }
+
+  a {
+    color    : $laranja;
+    font-size: $letra;
+    @include regular;
+    border   : 1px solid $laranja;
+    padding  : 8px;
+  }
+}
+
+#headehistoria {
+  background-color: $azul;
+}
+/*--------------------
+  3. Servicos
+----------------------*/
+#imgMobile {
+  display: none;
+}
+
+#imgDesktop {
+  display: block;
+}
+
+#servicoPadding {
+  max-width: 80%;
+}
+
+#servicoPaddingOutline {
+  display        : flex;
+  justify-content: space-between;
+  outline        : 0;
+  margin-top     : 80px;
+}
+
+.servicoImg {
+  width: 48%;
+}
+
+.servicoText {
+  width    : 48%;
+  font-size: $letra;
+  border   : 1px solid $laranja;
+  padding  : 8px;
+}
+
+.servicoInvert {
+  flex-direction: row-reverse;
+}
