@@ -193,7 +193,7 @@ a:hover {
 .linksDetalhes img {
   width: 100%;
   outline: 2px solid white;
-  outline-offset: -20px;
+  outline-offset: -10px;
 }
 
 #linksNovidades {
@@ -417,10 +417,6 @@ a:hover {
 /*--------------------
   7. footer
 ----------------------*/
-.grande {
-  display: none;
-}
-
 footer {
   background-color: #273544;
   text-align: center;

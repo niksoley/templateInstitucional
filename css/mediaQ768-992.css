@@ -17,8 +17,14 @@ Institucional - Template
 /*--------------------
   1. NAVBAR / LOGO
 ----------------------*/
+#banner {
+  padding: 20px 0 0;
+}
+
 #navBarDesktop {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navBarDesktop .navbar-nav {
@@ -49,7 +55,7 @@ header span {
 }
 
 #headerImgLogo {
-  width: 250px;
+  width: 200px;
   margin-left: 20px;
 }
 
@@ -60,8 +66,9 @@ header span {
 }
 
 .navbar-brand {
-  display: inline;
+  display: block;
   width: 100px;
+  padding: 0;
 }
 
 .navbar-light {
@@ -77,7 +84,7 @@ header span {
 }
 
 .home {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 .home a {
@@ -122,13 +129,13 @@ header span {
   max-width: 40%;
   margin: 0;
   position: absolute;
-  top: 35%;
+  top: 37%;
   right: 50%;
   transform: translateX(100%);
 }
 
 #bannerDetalhes span {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #bannerDetalhes p {
@@ -148,17 +155,18 @@ header span {
   3. Links
 ----------------------*/
 #linksPadding {
-  width: 80%;
+  width: 90%;
   padding-top: 80px;
 }
 
 #linksPadding h1 {
   text-align: center;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #linksPadding a {
-  font-size: 12pt;
+  font-size: 8pt;
+  padding: 12px 8px 12px 10px;
 }
 
 #linksDetalhesContainer {
@@ -168,13 +176,13 @@ header span {
 }
 
 #linksDetalhesContainer h2 {
-  font-size: 16pt;
+  font-size: 14pt;
   font-family: "Roboto";
   font-weight: 400;
 }
 
 .linksDetalhes {
-  width: 30%;
+  width: 32%;
 }
 
 #linksNovidadesMarginBorder {
@@ -206,10 +214,9 @@ header span {
 }
 
 #Novidades {
-  font-size: 16pt;
-  color: #52667c;
+  font-size: 14pt;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: bold;
 }
 
 /*--------------------
@@ -229,7 +236,7 @@ header span {
 
 #contatoContainer span:first-of-type {
   margin-top: 10px;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #contatoContainer p {
@@ -263,15 +270,16 @@ header span {
 #newsletter {
   text-align: center;
   padding: 80px 0 0;
+  background-image: url("../img/mobile/FundoLinhas.jpg");
 }
 
 #newsletter h3 {
   padding-top: 30px !important;
-  font-size: 16pt;
+  font-size: 18pt;
 }
 
 #newsletter p {
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 #newsletterImgSocial {
@@ -293,6 +301,7 @@ header span {
 #newsletterInput input {
   width: 250px;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 
 #newsletterInput input ::placeholder {
@@ -305,7 +314,7 @@ header span {
 
 #newsletter #newslettermargin a,
 #newsletter #newslettermargin span {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 /*--------------------
@@ -340,7 +349,7 @@ header span {
   3. footer
 ----------------------*/
 footer span {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 /*--------------------
@@ -370,7 +379,7 @@ footer span {
   color: #52667c;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 14pt;
   margin: 0 0 30px;
 }
 

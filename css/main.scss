@@ -195,7 +195,7 @@ a:hover {
   img {
     width         : 100%;
     outline       : 2px solid white;
-    outline-offset: -20px;
+    outline-offset: -10px;
   }
 }
 
@@ -408,10 +408,6 @@ a:hover {
 /*--------------------
   7. footer
 ----------------------*/
-.grande {
-  display: none;
-}
-
 footer {
   background-color: $azulEscuro;
   text-align      : center;

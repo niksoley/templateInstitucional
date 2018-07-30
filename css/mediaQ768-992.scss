@@ -1,7 +1,7 @@
 $laranja: #ff8500;
 $azul: #52667c;
 $branca: #FFF;
-$titulo: 16pt;
+$titulo: 14pt;
 $letra: 12pt;
 $fontNormal: 'candara';
 $fontBold: 'Candara Bold';
@@ -32,8 +32,14 @@ Institucional - Template
 /*--------------------
   1. NAVBAR / LOGO
 ----------------------*/
+#banner {
+  padding: 20px 0 0;
+}
+
 #navBarDesktop {
-  display: flex;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
 
   .navbar-nav {
     background-color: rgba(82, 102, 124, 0.5);
@@ -66,7 +72,7 @@ header {
 }
 
 #headerImgLogo {
-  width      : 250px;
+  width      : 200px;
   margin-left: 20px;
 }
 /*DRAW TOGGLE MENU */
@@ -76,8 +82,9 @@ header {
 }
 
 .navbar-brand {
-  display: inline;
+  display: block;
   width  : 100px;
+  padding: 0;
 }
 
 .navbar-light {
@@ -137,7 +144,7 @@ header {
   max-width: 40%;
   margin   : 0;
   position : absolute;
-  top      : 35%;
+  top      : 37%;
   right    : 50%;
   transform: translateX(100%);
 
@@ -162,7 +169,7 @@ header {
   3. Links
 ----------------------*/
 #linksPadding {
-  width      : 80%;
+  width      : 90%;
   padding-top: 80px;
 
   br {}
@@ -173,7 +180,8 @@ header {
   }
 
   a {
-    font-size: $letra;
+    font-size: 8pt;
+    padding  : 12px 8px 12px 10px;
   }
 }
 
@@ -189,7 +197,7 @@ header {
 }
 
 .linksDetalhes {
-  width: 30%;
+  width: 32%;
 }
 
 #linksNovidadesMarginBorder {
@@ -222,8 +230,7 @@ header {
 
 #Novidades {
   font-size: $titulo;
-  color    : $azul;
-  @include regular;
+  @include bold;
 }
 /*--------------------
   3. Contato
@@ -273,16 +280,17 @@ header {
   3. newsletter
 ----------------------*/
 #newsletter {
-  text-align: center;
-  padding   : 80px 0 0;
+  text-align      : center;
+  padding         : 80px 0 0;
+  background-image: url("../img/mobile/FundoLinhas.jpg");
 
   h3 {
     padding-top: 30px !important;
-    font-size  : $titulo;
+    font-size  : 18pt;
   }
 
   p {
-    font-size: $letra;
+    font-size: 14pt;
   }
 }
 
@@ -304,6 +312,7 @@ header {
   input {
     width        : 250px;
     margin-bottom: 0;
+    margin-right : 10px;
 
     ::placeholder {
       margin-left: 5px;
